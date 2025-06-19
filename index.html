@@ -1,42 +1,49 @@
 <!doctype html>
-<html>  
+<html lang="fr">
   <head>    
     <meta charset="UTF-8" />    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
-    <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.tailwindcss.com"></script> <!-- CDN officiel Tailwind -->
+    <title>Formulaire Tailwind</title>
   </head>  
 
-  <body>
-    <section class=" flex justify-center items-center w-full h-screen">
-      <div class="flex justify-center items-center">
-        <form class="w-[420px] border-2 border-gray-500 p-6 rounded-lg">
-        <div class="flex justify-center">
-          <button class="w-24 h-24 bg-[#00378a] rounded-full text-white py-2 px-4 text-2xl mb-5 hover:bg-blue-500">
-            <p>A2K</p>
+  <body class="bg-gray-100">
+    <section class="flex justify-center items-center min-h-screen px-4">
+      <div class="w-full max-w-md bg-white border-2 border-gray-300 p-6 rounded-lg shadow-md">
+        <!-- Bouton logo -->
+        <div class="flex justify-center mb-6">
+          <button class="w-24 h-24 bg-[#00378a] rounded-full text-white text-2xl hover:bg-blue-500 flex items-center justify-center">
+            A2K
           </button>
         </div>
-          
-        </button>
-        <h1 class="font-bold text-2x border-b-2 mb-10 text-center">Bienvenue dans la zone de connection.</h1>
-        <div class="flex flex-col">
-          <label for="email" class="text-md mb-4 font-bold">Email</label>
-          <input type="text" placeholder="test@gmail.com" class="border-2 p-3 rounded-lg" name="email">
-        </div><br>
-        <div class="flex flex-col">
-          <label for="password" class="text-md mb-4 font-bold">Password</label>
-          <input type="text" placeholder="******" class="border-2 p-3 rounded-lg" name="password" required>
-        </div><br>
-       <div class="flex justify-center">
-          <button class="bg-[#00378a] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Envoyer
-          </button>
-        </div>
+
+        <!-- Titre -->
+        <h1 class="text-center text-xl font-bold border-b-2 border-gray-300 pb-4 mb-6">
+          Bienvenue dans la zone de connexion.
+        </h1>
+
+        <!-- Formulaire -->
+        <form class="space-y-6">
+          <div class="flex flex-col">
+            <label for="email" class="mb-2 font-medium text-gray-700">Email</label>
+            <input type="email" name="email" placeholder="test@gmail.com"
+              class="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+
+          <div class="flex flex-col">
+            <label for="password" class="mb-2 font-medium text-gray-700">Password</label>
+            <input type="password" name="password" placeholder="******"
+              class="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+
+          <div class="flex justify-center">
+            <button type="submit"
+              class="bg-[#00378a] hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg w-full sm:w-auto">
+              Envoyer
+            </button>
+          </div>
         </form>
       </div>
     </section>
   </body>
-
-
 </html>
