@@ -1,0 +1,42 @@
+<!doctype html>
+<html>  
+  <head>    
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    <link rel="stylesheet" href="style.css">
+
+  </head>  
+
+  <body>
+    <section class=" flex justify-center items-center w-full h-screen">
+      <div class="flex justify-center items-center">
+        <form class="w-[420px] border-2 border-gray-500 p-6 rounded-lg">
+        <div class="flex justify-center">
+          <button class="w-24 h-24 bg-[#00378a] rounded-full text-white py-2 px-4 text-2xl mb-5 hover:bg-blue-500">
+            <p>A2K</p>
+          </button>
+        </div>
+          
+        </button>
+        <h1 class="font-bold text-2x border-b-2 mb-10 text-center">Bienvenue dans la zone de connection.</h1>
+        <div class="flex flex-col">
+          <label for="email" class="text-md mb-4 font-bold">Email</label>
+          <input type="text" placeholder="test@gmail.com" class="border-2 p-3 rounded-lg" name="email">
+        </div><br>
+        <div class="flex flex-col">
+          <label for="password" class="text-md mb-4 font-bold">Password</label>
+          <input type="text" placeholder="******" class="border-2 p-3 rounded-lg" name="password" required>
+        </div><br>
+       <div class="flex justify-center">
+          <button class="bg-[#00378a] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Envoyer
+          </button>
+        </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+
+</html>
